@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jane Doe">
+    <meta description="description" content="Desafionumero1">
+    <meta keywords="html, css, javascript,react">
+    <title>challenge1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+	
+	     <div class="row">
+		       <div class="logo">
+				     <img  src="img/vector.svg" alt="" style="width:70px">			
+				</div>
+		     <main>
+				
+				
+					<textarea PLACEHOLDER="Ingrese el texto aqui" class="texto" type="text" id="texto" pattern="[a-z]+" minlength="1" required onkeypress="return (event.charCode >= 97 && event.charCode <= 122)"></textarea>
+				
+					 
+					 <div class="container_botones">
+					     
+						<p><img src="img/icon.svg" alt="icono de admiracion" class="icon"> Solo letras minuscula y sin acento.</p>
+					     <div class="botones">	
+					     
+					             <button id="btn_1" class="btn btn_1">Encriptar</button>	<!--onclick="cifrar()"-->
+						     
+					             <button id="btn_2" class="btn btn_2">Desencriptar</button> 
+								 
+					        
+					     </div>
+					 </div>
+				 
+			</main>
+			 <aside class="rectangle">				
+				<div id="muneco" class="muneco">
+					<img class="img_muneco"src="img/muneco.svg" alt="imagen de niño viendo un diamante con lupa">
+			 
+					 <div class="text_rectangle">
+				
+				
+					  <h2 class="title_rectangle">Ningun mensaje fue encontrado</h2>
+					  <p class="p_rectangle">Ingrese el texto que desee encriptar o desencriptar</p>
+					 </div>
+				</div> 
+				      
+					 <div class="cuadro_texto ">
+						<h2 id="title">Texto Encriptado</h2>
+						<textarea id="textoEncriptado" class="texto p_rectangle"></textarea>
+						<br>
+						<button class="btn btn_2"  id="btnCopy" onclick="copy()">Copiar</button>
+						
+					 </div>
+					
+			</aside>
+		</div>
+	
+	<footer><p> &copy; Todos los derechos reservados 2024 | Carlos Rivera.</p></footer>
+	
+	<script src="index.js"></script>	
+</body>
+</html>
